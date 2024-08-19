@@ -1,0 +1,178 @@
+<div class="inner-wrapper" style="overflow: hidden;">
+    <div class="container-fluid no-padding">
+      <div class="row no-gutters" style="padding:10px;">
+        <div class="col-md-6">
+          <div class="main-banner">
+            <div class="overlay-2 main-padding">
+              <img src="logo-2.jpg" class="img-fluid" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="section-2 user-page main-padding">
+            <div class="login-sec">
+              <div class="login-box">
+                <form>
+                  <h4 class="text-light-black fw-600">Create your account</h4>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >First name</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Fname"
+                          class="form-control form-control-submit"
+                          placeholder="First Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >Last name</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Lname"
+                          class="form-control form-control-submit"
+                          placeholder="Last Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >Username</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Username"
+                          class="form-control form-control-submit"
+                          placeholder="Your Username"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >Gender</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Gender"
+                          class="form-control form-control-submit"
+                          placeholder="Your Gender"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >Address</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Address"
+                          class="form-control form-control-submit"
+                          placeholder="Your Address"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14"
+                          >Phone</label
+                        >
+                        <input
+                          type="text"
+                          [formControl]="Phone"
+                          class="form-control form-control-submit"
+                          placeholder="Your Phone"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14">Birth_Date</label>
+                        <input
+                          type="date"
+                          [formControl]="Birth_Date"
+                          class="form-control form-control-submit"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14">Email</label>
+                        <input
+                          type="email"
+                          [formControl]="Email"
+                          class="form-control form-control-submit"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14">Password (8 character minimum)</label
+                        >
+                        <input
+                          type="password"
+                          id="password-field2"
+                          [formControl]="Password"
+                          class="form-control form-control-submit"
+                          placeholder="Password"
+                          required
+                        />
+                        <div
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                          (click)="showpassword2()"
+                        ></div>
+                      </div>
+                      <div class="form-group">
+                        <label class="text-light-white fs-14">Confirm Password</label
+                        >
+                        <input
+                          type="password"
+                          id="password-field"
+                          [formControl]="CPassword"
+                          class="form-control form-control-submit"
+                          placeholder="Password"
+                          required
+                        />
+                        <div
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                          (click)="showpassword()"
+                        ></div>
+                      </div>
+                      <div class="form-group checkbox-reset">
+                        <label class="custom-checkbox mb-0">
+                          <input type="checkbox" name="#" />
+                          <span class="checkmark"></span> Keep me signed
+                          in</label
+                        >
+                      </div>
+                      <div class="form-group">
+                        <button
+                          type="submit"
+                          (click)="CheckRegister($event)"
+                          class="btn-second btn-submit full-width"
+                        >
+                          Create your account
+                        </button>
+                      </div>
+                     
+                      <div class="form-group text-center">
+                        <p class="text-light-black mb-0">
+                          Have an account? <a routerLink="../login">Sign in</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

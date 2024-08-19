@@ -1,0 +1,103 @@
+.restaurant-details-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.restaurant-info p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.menu-items-list,
+.orders-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-items-list li,
+.orders-list li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px; /* Spacing between buttons */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.edit-button {
+  margin-left: 10px;
+}
+
+.delete-button {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* New styles for Accept/Reject buttons */
+.accept-button {
+  background-color: #28a745;
+}
+
+.accept-button:hover {
+  background-color: #218838;
+}
+
+.reject-button {
+  background-color: #dc3545;
+}
+
+.reject-button:hover {
+  background-color: #c82333;
+}
+
+/* Adjusting flexbox for buttons */
+.orders-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders-list li .order-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}

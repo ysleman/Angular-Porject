@@ -1,0 +1,209 @@
+
+.user-page .login-sec {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+  .user-page .login-sec .login-box {
+    max-width: 420px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-shadow: 0 0 0 1px rgba(67, 41, 163, 0.08),
+      0 1px 5px 0 rgba(67, 41, 163, 0.08);
+    border-radius: 3px;
+    background: #fff;
+    padding: 30px;
+  }
+  .user-page .login-sec .login-box .checkbox-reset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user-page .login-sec .login-box span.terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .user-page .login-sec .login-box span.terms a {
+    margin: 0 3px;
+  }
+  .user-page .login-sec .login-box .form-group .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+    right: 18px;
+    cursor: pointer;
+  }
+  
+  .btn-submit {
+    color: #fff;
+    background: #ff0018;
+    border-color: #ff0018;
+  }
+  .btn-second {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 9px 15px 8px;
+    font-size: 14px;
+    line-height: 1.51741;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 500;
+    position: relative;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .btn-facebook {
+    color: #fff;
+    background: #3b5998;
+    border-color: #3b5998;
+  }
+  .btn-facebook:hover,
+  .btn-facebook:focus {
+    border-color: #2d4373;
+    background: #2d4373;
+    color: #fff;
+  }
+  .btn-google {
+    color: #fff;
+    background: #4285f4;
+    border-color: #4285f4;
+  }
+  .btn-google:focus,
+  .btn-google:hover {
+    border-color: #1266f1;
+    background: #1266f1;
+    color: #fff;
+  }
+  .btn-second img {
+    float: left;
+    left: -8px;
+    position: relative;
+    width: 22px;
+    height: 22px;
+  }
+  a{
+    text-decoration: none;
+    color: red;
+  }
+  a:focus,
+  a:hover {
+  color: blue;
+  text-decoration: none;
+  transition: 0.5s;
+  }
+  .inner-wrapper {
+    height: inherit;
+    position: relative;
+  }
+  .no-padding{
+    padding:0
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .main-padding {
+    padding: 64px 100px;
+  }
+  .main-banner .footer-img {
+    position: absolute;
+    bottom: 0;
+    max-width: 340px;
+    right: 0;
+  }
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    border-style: none;
+  }
+  img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  .section-2, .main-banner {
+    height: 100vh;
+  }
+  .main-banner .main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .no-gutters > .col, .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .overflow-auto {
+    overflow: auto !important;
+  }
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .form-group[_ngcontent-ng-c1631849134] {
+    margin-bottom: 0.3rem;
+  }
+  
+  .col-md-6{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .form-group {
+    margin-bottom: 0.3rem;
+  }

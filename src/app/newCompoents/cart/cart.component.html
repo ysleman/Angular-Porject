@@ -1,0 +1,18 @@
+<div class="cart-container">
+  <h1>Cart</h1>
+  <ul class="cart-items">
+    <li *ngFor="let item of cartItems">
+      <div class="cart-item-details">
+        <h2>{{ item.product['name'] }}</h2>
+        <p>Price: {{ item.product['price'] }}</p>
+        <img [src]="item.product['img']" alt="{{ item.product['name'] }}" style="width: 100px; height: 100px;">
+      </div>
+      <div class="cart-item-quantity">
+        Quantity: 
+        <input type="number" [value]="item.quantity" (change)="updateQuantity(item.product['id'], $event)">
+      </div>
+      <button class="cart-item-remove" (click)="removeItem(item.product['id'])">Remove</button>
+    </li>
+  </ul>
+  <button class="btn btn-primary" (click)="gotopage()">Go to Payment</button>
+</div>

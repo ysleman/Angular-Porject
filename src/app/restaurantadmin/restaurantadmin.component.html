@@ -1,0 +1,28 @@
+<div class="restaurant-details-container">
+  <h1 class="page-title">{{ restaurant.name }} Details</h1>
+
+  <div class="restaurant-info">
+    <p><strong>Address:</strong> {{ restaurant.address }}</p>
+  </div>
+
+  <h2>Menu Items</h2>
+  <ul class="menu-items-list">
+    <li *ngFor="let item of menuItems">
+      {{ item.name }}
+      <button class="edit-button" (click)="editMenuItem(item.id)">Edit</button>
+      <button class="delete-button" (click)="deleteMenuItem(item.id)">Delete</button>
+    </li>
+  </ul>
+  <button class="add-button" (click)="navigateToAddMenuItem()">Add Menu Item</button>
+
+  <h2>Current Orders</h2>
+  <ul class="orders-list">
+    <li *ngFor="let order of orders">
+      Order ID: {{ order[0].order_id }} - Status: {{ order[0].finished }}
+      <button class="accept-button" (click)="acceptOrder(order[0].order_id)">Accept</button>
+      <button class="reject-button" (click)="rejectOrder(order[0].order_id)">Reject</button>
+      <button class="edit-button" (click)="editOrder(order[0].order_id)">Edit</button>
+      <button class="delete-button" (click)="deleteOrder(order[0].order_id)">Delete</button>
+    </li>
+  </ul>
+</div>

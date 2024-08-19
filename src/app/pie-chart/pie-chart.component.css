@@ -1,0 +1,45 @@
+/* pie-chart.component.css */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .year-selection, .month-selection {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  .chart-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .no-result {
+    margin-top: 20px;
+    text-align: center;
+    color: #ff0000;
+  }
+  

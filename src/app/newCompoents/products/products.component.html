@@ -1,0 +1,33 @@
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="!loading">
+  <!-- Search bar and location dropdown -->
+  <div class="filters">
+    <input type="text" placeholder="Search products..." [(ngModel)]="searchQuery" (input)="filterProducts()" class="search-bar">
+    <button (click)="openLocationPopup()">Choose Location</button>
+  </div>
+  
+  <ul class="grid-container">
+    <li *ngFor="let product of filteredProducts; let i=index" class="grid-item">
+      <script>console.log(product)</script>
+      <div class="card" style="width: 14rem;" (click)="gotopage(product['id'])">
+        <img class="card-img-top" src="{{product['img']}}" alt="Card image cap" style="width: 225px; height: 225px;">
+        <div class="card-body">
+          <h5 class="card-title">{{product['name']}}</h5>
+          <p class="card-text">Price : {{product['price']}}</p>
+          <a  class="btn btn-primary" (click)="incCart($event, product)">Add To Cart</a>
+          <a  class="btn btn-success" (click)="gotopage(product['id'])">View Item</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+</div>
+<div class="cart">
+  <i class="fa" (click)="viewOrder()">&#xf07a;</i>
+  <span class="badge badge-warning" id="lblCartCount">{{count }}</span>
+</div>
+<div *ngIf="locationPopupOpen">
+  <app-location-selector *ngIf="locationPopupOpen"  (closePopup)="closeLocationPopup()"></app-location-selector>
+</div>

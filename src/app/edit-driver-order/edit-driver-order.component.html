@@ -1,0 +1,12 @@
+<div class="driver-form-container">
+    <h1 class="form-title">Edit Driver</h1>
+    <form [formGroup]="driverorderform" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="delivered">delivered</label>
+        <input type="text" id="delivered" formControlName="delivered" class="form-control" />
+      </div>
+      <button type="submit" class="submit-button">Save Changes</button>
+      <button type="button" class="cancel-button" (click)="onCancel()">Cancel</button>
+    </form>
+  </div>
+  

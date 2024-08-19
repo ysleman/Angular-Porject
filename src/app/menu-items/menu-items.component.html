@@ -1,0 +1,12 @@
+<div *ngIf="menuItems.length > 0">
+  <div *ngFor="let menuItem of menuItems" class="menu-item">
+    <h2>{{ menuItem.name }}</h2>
+    <p>{{ menuItem.description }}</p>
+    <p>Price: {{ menuItem.price }}</p>
+    <p>Quantity: {{ menuItem.quantity }}</p>
+   
+  </div>
+</div>
+<div *ngIf="menuItems.length === 0">
+  <p>No menu items available.</p>
+</div>

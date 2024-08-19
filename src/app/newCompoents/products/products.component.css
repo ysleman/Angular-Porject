@@ -1,0 +1,58 @@
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* or any other value based on your preference */
+    list-style: none;
+    padding: 0;
+}
+.grid-item{
+    margin: 10px;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+}
+.cart{
+  position: fixed;
+  bottom: 10%;
+  left: 10px;
+  color:rgba(0, 0, 0, 0.7);
+}
+.cart i {
+  font-size:30px;
+}
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 70%;
+    padding: 10px;
+  }
+  
+  .location-dropdown {
+    width: 28%;
+    padding: 10px;
+  }
+  

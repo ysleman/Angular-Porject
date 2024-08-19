@@ -1,0 +1,91 @@
+<div class="admin-container">
+  <h1 class="page-title">Admin Dashboard</h1>
+
+  <!-- Restaurant Section -->
+  <div class="admin-section">
+    <h2>Manage Restaurants</h2>
+    <div class="restaurant-list">
+      <div *ngFor="let restaurant of restaurants">
+        <div class="restaurant-item">
+          <h3>{{ restaurant.name }}</h3>
+          <button (click)="selectRestaurant(restaurant)">Show Details</button>
+          <button (click)="editRestaurant(restaurant.id)">Edit</button>
+          <button (click)="deleteRestaurant(restaurant.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-restaurant" (click)="addRestaurant()">Add Restaurant</button>
+    <!-- Show chart only if a restaurant is selected -->
+    <div class="chart-section" *ngIf="selectedRestaurant">
+      <div class="chart-title">Sales for {{ selectedRestaurant.name }}</div>
+      <app-bar-chart [restaurant]="selectedRestaurant"></app-bar-chart>
+      <button class="clear-selection" (click)="clearSelection()">Clear Selection</button>
+    </div>
+
+  </div>
+
+  <!-- Orders Section -->
+  <div class="admin-section">
+    <h2>Manage Orders</h2>
+    <div class="order-list">
+      <div *ngFor="let order of orders">
+        <div class="order-item">
+          <h3>Order ID: {{ order.id }}</h3>
+          <p>User ID: {{ order.user_id }}</p>
+          <p>Driver ID: {{ order.driver_id }}</p>
+          <p>Order Date: {{ order.orderDate}}</p>
+          <p>Total Price: {{ order.totalPrice }}</p>
+          <button (click)="editOrder(order.id)">Edit</button>
+          <button (click)="deleteOrder(order.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  <app-pie-chart></app-pie-chart>
+  </div>
+
+
+  <!-- Users Section -->
+  <div class="admin-section">
+    <h2>Manage Users</h2>
+    <div class="user-list">
+      <div *ngFor="let user of users">
+        <div class="user-item">
+          <h3>User ID: {{ user.id }}</h3>
+          <p>First Name: {{ user.firstname }}</p>
+          <p>Last Name: {{ user.lastname }}</p>
+          <p>Username: {{ user.username }}</p>
+          <p>Email: {{ user.email }}</p>
+          <p>Admin: {{ user.admin }}</p>
+          <p>Phone: {{ user.phone }}</p>
+          <p>Birth Date: {{ user.birthDate }}</p>
+          <p>Password: {{ user.password }}</p>
+          <p>Temp Password: {{ user.temp_password }}</p>
+          <p>Image: {{ user.img }}</p>
+          <p>Address: {{ user.address }}</p>
+          <button (click)="editUser(user.id)">Edit</button>
+          <button (click)="deleteUser(user.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-user" (click)="addUser()">Add User</button>
+  </div>
+
+  <!-- Driver Section -->
+  <div class="admin-section">
+    <h2>Manage Drivers</h2>
+    <div class="driver-list">
+      <div *ngFor="let driver of drivers">
+        <div class="driver-item">
+          <h3>Driver ID: {{ driver.id }}</h3>
+          <p>Full Name: {{ driver.full_Name }}</p>
+          <p>Username: {{ driver.username }}</p>
+          <p>Password: {{ driver.password }}</p>
+          <p>Phone: {{ driver.phone }}</p>
+          <button (click)="editDriver(driver.id)">Edit</button>
+          <button (click)="deleteDriver(driver.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-driver" (click)="addDriver()">Add Driver</button>
+  </div>
+</div>

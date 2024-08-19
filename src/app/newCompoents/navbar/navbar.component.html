@@ -1,0 +1,15 @@
+<div class="navbar1">
+    <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+            <li routerLinkActive="active"><a  routerLink="about">About us</a></li>
+            <div *ngIf="!loggedIn; then login else logout"></div>
+                  <ng-template #login>
+                        <li class="icon"><a routerLink="profile"><i  class="fas fa-user"></i></a></li>
+                  </ng-template>
+                  <ng-template #logout>
+                        <li class="icon"><a (click)="SignOut()"><i  class="fas fa-sign-in-alt"></i></a></li>
+                        <li class="icon"><a routerLink="profile/user"><i class="fas fa-user"></i></a></li>
+                  </ng-template>
+
+      </ul>
+</div>

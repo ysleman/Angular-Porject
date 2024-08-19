@@ -1,0 +1,22 @@
+<div class="year-selection">
+    <label for="yearSelect">Select Year:</label>
+    <select id="yearSelect" (change)="onYearChange($event)">
+      <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+    </select>
+  </div>
+
+
+
+<ng-container *ngIf="Display!='Waiting' && Display != 'No Result'; else noResultTemplate">
+    <div class="chart-section">
+      <h2 class="chart-title">Monthly Order Totals</h2>
+      <canvasjs-chart [options]="chartOptions"></canvasjs-chart>
+      <canvasjs-chart [options]="chartOptionstax"></canvasjs-chart> 
+    </div>
+  </ng-container>
+  
+  <ng-template #noResultTemplate>
+    <div class="no-result">
+      <p>{{ Display }}</p>
+    </div>
+  </ng-template>
